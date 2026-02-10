@@ -20,7 +20,37 @@ A professional project is like a well-organized office. Everything has its own d
 
 ---
 
-## 🏠 Part 2: The Landing Page (The Front Door)
+## � Part 2: Where to Find Your Assets (Icons & Images)
+To make your project look professional, you need high-quality icons and pictures. You don't have to use the exact ones in the screenshots—feel free to be creative!
+
+### 1. Icons (Simple Graphics)
+Icons help users understand what a button does without reading text.
+- **Where to look**: 
+  - [Lucide.dev](https://lucide.dev/icons): Clean and modern icons. Just search for what you need!
+  - [FontAwesome](https://fontawesome.com/search?o=r&m=free): A classic choice with thousands of free icons.
+- **What to search for**: 
+  - `user` or `profile` (for the profile page)
+  - `hospital`, `heart-pulse`, or `stethoscope` (for the healthcare theme)
+  - `search` (for the search bar)
+  - `trash` or `edit` (for the dashboard actions)
+
+### 2. Images (Photos)
+Large, high-quality photos make your "Hero" section stand out.
+- **Where to look**: 
+  - [Unsplash.com](https://unsplash.com): Beautiful, high-resolution free photos.
+  - [Pexels.com](https://pexels.com): Another great source for royalty-free images.
+- **What to search for**: 
+  - `healthcare technology`
+  - `modern hospital`
+  - `medical professional`
+  - `dark aesthetic tech`
+
+### 💡 Pro Tip:
+When you find an image, save it into your `assets/img/` folder with a short, simple name like `hero-image.jpg`. This makes it much easier to link in your code!
+
+---
+
+## �🏠 Part 2: The Landing Page (The Front Door)
 This is the first thing people see. It needs to look great and tell them what to do.
 
 ![The Home Page](./assets/img/homepage_full_view.png)
