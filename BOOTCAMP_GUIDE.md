@@ -20,7 +20,7 @@ A professional project is like a well-organized office. Everything has its own d
 
 ---
 
-## � Part 2: Where to Find Your Assets (Icons & Images)
+## 🎨 Part 2: Where to Find Your Assets (Icons & Images)
 To make your project look professional, you need high-quality icons and pictures. You don't have to use the exact ones in the screenshots—feel free to be creative!
 
 ### 1. Icons (Simple Graphics)
@@ -50,7 +50,7 @@ When you find an image, save it into your `assets/img/` folder with a short, sim
 
 ---
 
-## �🏠 Part 2: The Landing Page (The Front Door)
+## 🏠 Part 3: The Landing Page (The Front Door)
 This is the first thing people see. It needs to look great and tell them what to do.
 
 ![The Home Page](./assets/img/homepage_full_view.png)
@@ -72,8 +72,20 @@ This is the first thing people see. It needs to look great and tell them what to
 
 ---
 
-## 🔑 Part 4: The Security System (Authentication)
-Before seeing patient data, users must "Sign In" so the information stays private.
+## 🧠 Part 4: Core Logic & ES Modules
+We utilize **ES6 Modules** to create a clean, decoupled logic layer. This allows us to share code across multiple pages without polluting the global scope.
+
+1.  **Authentication Module (`js/modules/auth.js`)**:
+    *   **Storage**: Use `localStorage.setItem` and `localStorage.getItem` to persist user credentials.
+    *   **Validation**: Implement logic to verify usernames and passwords during login.
+    *   **Authorization**: Create a `checkAuth()` function that runs on page load. If no active session exists, it should trigger a `window.location.href` redirect to the login page.
+2.  **Notification Module (`js/modules/toast.js`)**:
+    *   Dynamically create DOM elements to display timed alerts. 
+
+---
+
+## 🔐 Part 5: Authentication (Registration & Login)
+Secure yet accessible authentication is a critical requirement.
 
 ### Registration (Setting up an account)
 ![Register Page](./assets/img/register_page.png)
@@ -87,7 +99,7 @@ Before seeing patient data, users must "Sign In" so the information stays privat
 
 ---
 
-## 📊 Part 5: The Dashboard (Managing Data)
+## 📊 Part 6: The Dashboard (Managing Data)
 This is where the real work happens. You can see your patients, search for them, or delete them.
 
 ![The Main Dashboard](./assets/img/dashboard_page.png)
@@ -105,14 +117,14 @@ This is where the real work happens. You can see your patients, search for them,
 
 ---
 
-## 👤 Part 6: User Profile
+## 👤 Part 7: User Profile
 ![Profile Page](./assets/img/profile_page.png)
 - **What it is**: A page showing **your** information.
 - **How it works**: It pulls your username and the exact time you logged in from the browser's memory and displays it here.
 
 ---
 
-## 🚀 Part 7: Going Live (Deployment)
+## 🚀 Part 8: Going Live (Deployment)
 Now that your project is finished, you want to show it to the world!
 
 ![The Footer](./assets/img/footer_layout.png)
