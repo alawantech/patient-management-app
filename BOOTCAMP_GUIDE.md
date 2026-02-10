@@ -72,7 +72,7 @@ This is the first thing people see. It needs to look great and tell them what to
 
 ---
 
-## 🔑 Part 3: The Security System (Authentication)
+## 🔑 Part 4: The Security System (Authentication)
 Before seeing patient data, users must "Sign In" so the information stays private.
 
 ### Registration (Setting up an account)
@@ -87,7 +87,7 @@ Before seeing patient data, users must "Sign In" so the information stays privat
 
 ---
 
-## 📊 Part 4: The Dashboard (Managing Data)
+## 📊 Part 5: The Dashboard (Managing Data)
 This is where the real work happens. You can see your patients, search for them, or delete them.
 
 ![The Main Dashboard](./assets/img/dashboard_page.png)
@@ -105,14 +105,14 @@ This is where the real work happens. You can see your patients, search for them,
 
 ---
 
-## 👤 Part 5: User Profile
+## 👤 Part 6: User Profile
 ![Profile Page](./assets/img/profile_page.png)
 - **What it is**: A page showing **your** information.
 - **How it works**: It pulls your username and the exact time you logged in from the browser's memory and displays it here.
 
 ---
 
-## 🚀 Part 6: Going Live (Deployment)
+## 🚀 Part 7: Going Live (Deployment)
 Now that your project is finished, you want to show it to the world!
 
 ![The Footer](./assets/img/footer_layout.png)
