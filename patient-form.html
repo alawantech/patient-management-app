@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patient Management - Add/Edit Patient</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" style="text-decoration:none;color:inherit;">
+        <svg width="30" height="30" viewBox="0 0 50 50" fill="none">
+          <rect width="50" height="50" rx="10" fill="#0066cc" />
+          <path d="M25 15v20M15 25h20" stroke="white" stroke-width="4" stroke-linecap="round" />
+        </svg>
+        <span>Patient Management</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="form-page">
+      <div class="form-header">
+        <button class="btn btn-secondary" onclick="window.location.href = 'dashboard.html'">
+          ← Back to Dashboard
+        </button>
+      </div>
+
+      <div class="form-card">
+        <h2 id="formTitle">Add New Patient</h2>
+        <p class="form-description">Fill in the patient information below</p>
+
+        <form id="patientForm" class="patient-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="patientName">Full Name *</label>
+              <input type="text" id="patientName" name="patientName" placeholder="Enter patient's full name" required />
+              <span class="error-message" id="nameError"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="patientAge">Age *</label>
+              <input type="number" id="patientAge" name="patientAge" placeholder="Enter age" min="0" max="150"
+                required />
+              <span class="error-message" id="ageError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="patientGender">Gender *</label>
+              <select id="patientGender" name="patientGender" required>
+                <option value="">Select gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+              <span class="error-message" id="genderError"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="patientCondition">Medical Condition *</label>
+              <input type="text" id="patientCondition" name="patientCondition" placeholder="Enter medical condition"
+                required />
+              <span class="error-message" id="conditionError"></span>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn btn-secondary" onclick="window.location.href = 'dashboard.html'">
+              Cancel
+            </button>
+            <button type="submit" class="btn btn-primary" id="submitBtn">
+              <span id="submitBtnText">Add Patient</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/pages/patient-form.js"></script>
+</body>
+
+</html>

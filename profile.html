@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patient Management - Profile</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" style="text-decoration:none;color:inherit;">
+        <svg width="30" height="30" viewBox="0 0 50 50" fill="none">
+          <rect width="50" height="50" rx="10" fill="#0066cc" />
+          <path d="M25 15v20M15 25h20" stroke="white" stroke-width="4" stroke-linecap="round" />
+        </svg>
+        <span>Patient Management</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="profile.html" class="active">Profile</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="page-header">
+      <div>
+        <h1>User Profile</h1>
+        <p>View your account information</p>
+      </div>
+    </div>
+
+    <div class="profile-container">
+      <div class="profile-card">
+        <div class="profile-avatar">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0066cc" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+
+        <div class="profile-info">
+          <h2 id="profileUsername">Admin User</h2>
+          <p class="profile-role">System Administrator</p>
+        </div>
+
+        <div class="profile-details">
+          <div class="detail-row">
+            <span class="detail-label">Username:</span>
+            <span class="detail-value" id="usernameValue">admin</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Login Time:</span>
+            <span class="detail-value" id="loginTimeValue">N/A</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Status:</span>
+            <span class="detail-value">
+              <span class="status-badge status-active">Active</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="profile-actions">
+          <button class="btn btn-secondary btn-block" onclick="window.location.href = 'dashboard.html'">
+            Go to Dashboard
+          </button>
+          <button class="btn btn-danger btn-block" onclick="logout()">
+            Logout
+          </button>
+        </div>
+      </div>
+
+      <div class="about-card">
+        <h3>About Patient Management System</h3>
+        <p>
+          This is a demo patient management system built with vanilla JavaScript. It demonstrates:
+        </p>
+        <ul class="feature-list">
+          <li>User authentication with localStorage</li>
+          <li>CRUD operations (Create, Read, Update, Delete)</li>
+          <li>Data persistence using localStorage</li>
+          <li>Search and pagination functionality</li>
+          <li>Form validation</li>
+          <li>Responsive design</li>
+          <li>Modern UI/UX patterns</li>
+        </ul>
+
+        <div class="tech-stack">
+          <h4>Built With:</h4>
+          <div class="tech-badges">
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">CSS3</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">localStorage API</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/pages/profile.js"></script>
+</body>
+
+</html>
